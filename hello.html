@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GIT HUB</title>
+  <style>
+    /* CSS styles for the text box and textarea */
+    .textbox, .password-textarea {
+      width: 300px; /* Width of the input elements */
+      padding: 10px; /* Padding inside the input elements */
+      font-size: 16px; /* Font size of the text */
+      border: 1px solid #ccc; /* Border style and color */
+      border-radius: 4px; /* Rounded corners */
+      box-sizing: border-box; /* Ensure padding and border are included in width */
+      outline: none; /* Remove default outline */
+      margin-bottom: 10px; /* Add space between input elements */
+      transition: transform 0.3s ease-in-out; /* Smooth transition for transform */
+    }
+
+    .password-textarea {
+      resize: none; /* Prevents resizing of the textarea */
+    }
+    
+    /* Additional styles for centering content */
+    body {
+      text-align: center; /* Center align text */
+      margin-top: 50px; /* Add some space from the top */
+      font-family: Arial, sans-serif; /* Specify a fallback font family */
+      background-color: #f0f0f0; /* Light gray background color */
+      color: #333; /* Darken the text color */
+    }
+    
+    h1 {
+      font-size: 36px; /* Larger font size for h1 */
+      margin-bottom: 10px; /* Add space below h1 */
+      text-transform: uppercase; /* Convert text to uppercase */
+      letter-spacing: 2px; /* Increase letter spacing */
+      color: #ff8f00; /* Orange color for h1 */
+    }
+    
+    h2 {
+      font-size: 24px; /* Font size for h2 */
+      font-style: italic; /* Make h2 text italic */
+      color: #666; /* Lighten the color of h2 */
+    }
+
+    .choice {
+      margin-top: 20px; /* Add space between choice section and inputs */
+    }
+
+    .choice button {
+      background-color: #ff8f00; /* Orange background color for buttons */
+      color: #fff; /* White text color for buttons */
+      border: none; /* Remove default button border */
+      padding: 10px 20px; /* Padding inside buttons */
+      font-size: 16px; /* Font size of the buttons */
+      cursor: pointer; /* Change cursor to pointer on hover */
+      border-radius: 4px; /* Rounded corners for buttons */
+      margin: 0 10px; /* Add space between buttons */
+      transition: background-color 0.3s ease-in-out; /* Smooth transition for background color */
+    }
+
+    .choice button:hover {
+      background-color: #ffae42; /* Darker orange background color on hover */
+    }
+
+    /* Animation for text area */
+    @keyframes wobble {
+      25% { transform: translateX(-5px) rotate(-5deg); }
+      50% { transform: translateX(5px) rotate(5deg); }
+      75% { transform: translateX(-5px) rotate(-5deg); }
+      100% { transform: translateX(0) rotate(0); }
+    }
+
+    .password-textarea:hover {
+      animation: wobble 0.5s ease-in-out;
+    }
+
+    /* Styles for the footer section */
+    footer {
+      background-color: #333; /* Dark background color for footer */
+      color: #fff; /* White text color for footer */
+      padding: 20px; /* Padding inside footer */
+      text-align: center; /* Center align text in footer */
+      position: fixed; /* Fixed positioning at the bottom */
+      left: 0;
+      bottom: 0;
+      width: 100%; /* Full width */
+    }
+
+    footer a {
+      color: #fff; /* White text color for links */
+      text-decoration: none; /* Remove underline from links */
+      margin: 0 10px; /* Add space between links */
+    }
+
+    /* Styles for the GitHub logo */
+    .github-logo {
+      width: 150px; /* Larger width for the logo */
+      margin-top: 20px; /* Add space above the logo */
+      filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.1)); /* Drop shadow effect */
+      transition: transform 0.3s ease-in-out; /* Smooth transition on hover */
+    }
+
+    .github-logo:hover {
+      transform: scale(1.1); /* Scale up the logo on hover */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- GitHub logo -->
+  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" class="github-logo">
+
+  <h1>Hello and Welcome to GitHub</h1>
+  <i><h2>Your place for collaboration and version control</h2></i>
+
+  <!-- Example of a text box -->
+  <input type="text" class="textbox" placeholder="Enter your GitHub username"><br>
+
+  <!-- Example of a password textarea with wobble effect -->
+  <textarea class="textbox password-textarea" placeholder="Enter your password"></textarea><br>
+
+  <!-- Choice section: Create account or login -->
+  <div class="choice">
+    <p>Do you want to:</p>
+    <button>Create Account</button>
+    <button>Login</button>
+  </div>
+
+  <!-- Footer section -->
+  <footer>
+    <a href="#">Terms</a>
+    <a href="#">Privacy</a>
+    <a href="#">Docs</a>
+    <a href="#">Contact GitHub Support</a>
+    <a href="#">Manage cookies</a>
+    <a href="#">Do not share my personal information</a>
+  </footer>
+
+</body>
+</html>
